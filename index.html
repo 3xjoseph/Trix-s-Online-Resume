@@ -4,136 +4,212 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Patrick Joseph's Online Resume</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
         <style>
-            img {
-                border: 4px solid black;
-                width: 200px;
-                height: 200px;
+
+            body {
+                margin: 0;
+                padding: 0;
+                font-family: "Montserrat", sans-serif;
+                color: #696969;
             }
+
+
+            .container {
+                display: flex;
+                flex-direction: column;
+                height: 100%;
+            }
+
+            .container > .header {
+                background-color: #D9DEE1;
+                display: grid;
+                grid-template-columns: 85% minmax(250px, 250px);
+                padding: 40px;
+            }
+
+            .header #profile-picture {
+                width: 250px;
+                height: 250px;
+                border: 4px solid black;
+                object-fit: cover;
+                object-position: center 30%;
+            }
+
+            .header-info {
+                display: flex;
+                flex-direction: column;
+                gap: 8px;
+            }
+            
+            .header .icon-header {
+                height: 24px;
+                width: 24px;
+                align-self: center;
+            }
+
+            .header-info > h1 {
+                font-size: 3rem;
+            }
+
+            .info {
+                display: flex;
+                flex-direction: row;
+                gap: 9px;
+                margin: 0;
+                padding: 0;
+            }
+
+            .info p {
+                margin: 0;
+            }
+
+            
         </style>
     </head>
     <body>
-        <h1>Patrick Joseph Pronuevo</h1>
-        <img src="./assets/images/Profile_Picture.png" alt="Profile Picture" height="250px" width="250">
-
-       <p><b>E:</b> pronuevopatrickjoseph@gmail.com</p>
-       <p><b>P:</b> +639764127324</p>
-       <p><b>A:</b> Bulakan, Bulacan Philippines, 3017</p>
-       <p><b>W:</b> linkedin.com/in/patrick-joseph-pronuevo</p>
-
-       <hr>
-
-       <!--PORTFOLIO-->
-       <h2>PORTFOLIO</h2>
-       
-       <p>patrick-joseph-propnuevo-portfolio.vercel.app/</p>
-
-       <!--PROFESSIONAL SUMMARY-->
-       <h2>PROFESSIONAL SUMMARY</h2>
-       
-       <p>Knowledgeable in web development and game development with a solid background in  creating immersive and engaging experiences. Adept at designing  innovative gameplay mechanics and compelling storylines that  captivate players. Well versed in using HTML, CSS, Tailwind, JavaScript, REACT, and Python for creating engaging website.
-        Proficient in coding and skilled in collaborative  problem-solving. </p>
-
-        <!--WORK HISTORY-->
-        <h2>WORK HISTORY</h2>
+        <div class="container">
+            <div class="header">
+                <div class="header-info">
+                    <h1>Patrick Joseph Pronuevo</h1>
+                    <div class="info email">
+                        <img class="icon-header" src="./assets/images/email-icon.png" alt=""> 
+                        <p>pronuevopatrickjoseph@gmail.com</p>
+                    </div>
+                    <div class="info contact-number">
+                        <img class="icon-header" src="./assets/images/contact-icon.png" alt=""> 
+                        <p>+639764127324</p>
+                    </div>
+                    <div class="info address">
+                        <img class="icon-header" src="./assets/images/address-icon.png" alt=""> 
+                        <p>Bulakan, Bulacan Philippines, 3017</p>
+                    </div>
+                    <div class="info linkedin">
+                        <img class="icon-header" src="./assets/images/linkedin-icon.png" alt=""> 
+                        <p>linkedin.com/in/patrick-joseph-pronuevo</p>
+                    </div>
+                </div>
+                
+                <img id="profile-picture" src="./assets/images/Profile_Picture.png" alt="Profile Picture" height="250px" width="250">
+    
+            </div>
+    
+    
+           <!--PORTFOLIO-->
+           <h2>PORTFOLIO</h2>
+           
+           <p>patrick-joseph-propnuevo-portfolio.vercel.app/</p>
+    
+           <!--PROFESSIONAL SUMMARY-->
+           <h2>PROFESSIONAL SUMMARY</h2>
+           
+           <p>Knowledgeable in web development and game development with a solid background in  creating immersive and engaging experiences. Adept at designing  innovative gameplay mechanics and compelling storylines that  captivate players. Well versed in using HTML, CSS, Tailwind, JavaScript, REACT, and Python for creating engaging website.
+            Proficient in coding and skilled in collaborative  problem-solving. </p>
+    
+            <!--WORK HISTORY-->
+            <h2>WORK HISTORY</h2>
+            
+            <!--JOB 3-->
+            <h3>Game Developer - Freelance  </h3>
+            <p>Philippines (Remote) • 10/2024 – 11/2024</p>
+            
+            <ul>
+                <li>Created the whole system for the 2D Mobile game (Guardians of  Luzviminda)</li>
+                <li>Implemented dialogue system, turn-based battle, mini map  system, farming system, and inventory system.</li>
+            </ul>
+    
+            <!--JOB 2-->
+            <h3>ARC Roofing Co. - Freelance (User Interface Designer)</h3>
+            <p>12978 SW 132nd Ave, Miami, FL, United States (Remote) • 05/2024 -  08/2024</p>
+            
+            <ul>
+                <li>Created the whole system for the 2D Mobile game (Guardians of  Luzviminda)</li>
+                <li>Enhanced user experience by designing intuitive interfaces and  seamless navigation elements.</li>
+                <li>Designed 2 sets of headers and footers and developed a  cohesive color palette for consistent branding.</li>
+                <li>Developed wireframes, prototypes, and mockups to effectively  communicate design concepts to stakeholders.</li>
+            </ul>
+    
+    
+             <!--JOB 1-->
+            <h3>Results Marketing Partners - Web and Mobile Developer Intern</h3>
+            <p>350 Royer Rd, Lititz, PA 17543, United States (Remote) • 01/2024 -  05/2024</p>
+            
+            <ul>
+                <li>Implemented SEO strategies to boost website visibility and drive  organic traffic. </li>
+                <li>Developed websites using CRM platforms like WordPress,  prioritizing user-friendly design and functionality.</li>
+                <li>Identified a niche market and developed tailored offerings for the  customer base.</li>
+                <li>Created a tripwire poster and video, along with a series of 5  engaging emails to drive customer engagement.</li>
+                <li>Designed intuitive UI/UX interfaces using Figma, improving overall  user experience.</li>
+            </ul>
+    
+            <!--SKILLS-->
+            <h3>SKILLS</h3>
+            <ul>
+                <li>UNITY GAME ENGINE</li>
+                <li>C# Programming</li>
+                <li>Java</li>
+                <li>C++</li>
+                <li>HTML5</li>
+                <li>CSS</li>
+                <li>Tailwind CSS</li>
+                <li>JavaScript</li>
+                <li>REACT JS</li>
+                <li>MySQL</li>
+                <li>PHP</li>
+                <li>Phyton</li>
+                <li>Node.JS</li>
+                <li>Git/GitHub</li>
+                <li>Figma</li>
+                <li>UI and UX Design Proficiency</li>
+                <li>Concept Development</li>
+                <li>MS Word </li>
+                <li>PowerPoint</li>
+                <li>Google Docs</li>
+                <li>Google Sheets</li>
+            </ul>
+    
+            <!--EDUCATION-->
+            <h3>EDUCATION</h3>
+            <p>
+                Malolos, Bulacan • 09/2020 - 08/2024   <br>
+                Bachelor of Science: Information  Technology
+            </p>
+    
+            <!--ACCOMPLISHMENTS-->
+            <h3>ACCOMPLISHMENTS</h3>
+            <ul>
+                <li>Magna Cum Laude</li>
+                <li>Best Research in Web and Mobile  Development</li>
+                <li>Dean's Lister and Gold Gear Awardee</li>
+                <li>Best in Investigatory Research</li>
+            </ul>
+    
+             <!--AFFILIATONS-->
+             <h3>AFFILIATIONS</h3>
+             <ul>
+                 <li>Microsoft Learn Student Ambassador (Beta)</li>
+                 <li>BSU Microsoft Student Community  (Events Director)</li>
+                 <li>BSU CICT Local Student Counsil (E Sports Committee)</li>
+             </ul>
+    
+             <!--CERTIFICATIONS-->
+            <h3>CERTIFICATIONS</h3>
+            <ul>
+                <li>Complete C# Unity Game Developer 3D (<b>UDEMY</b>)</li>
+                <li>Write a Professional Game Design Document (GDD) (<b>UDEMY</b>)</li>
+                <li>Programming Design Patterns for Unity: Write Better Code  (<b>UDEMY</b>)</li>
+                <li>Math For Video Games: The Fastest Way to Get Smarter at Math  (<b>UDEMY</b>)</li>
+                <li>SRE - The Big Picture (<b>UDEMY</b>)</li>
+                <li>Level Up with GitHub Codespaces and CoPilot (<b>Microsoft</b>)</li>
+                <li>A Crash Course: Tesla – Price, Value, and Performance (<b>IBS -  International Business School Americas</b>)</li>
+            </ul>
+            
+            <hr>
+            <br> 
+            <footer>© Patrick Joseph Pronuevo. All rights reserved.</footer>
+        </div>
         
-        <!--JOB 3-->
-        <h3>Game Developer - Freelance  </h3>
-        <p>Philippines (Remote) • 10/2024 – 11/2024</p>
-        
-        <ul>
-            <li>Created the whole system for the 2D Mobile game (Guardians of  Luzviminda)</li>
-            <li>Implemented dialogue system, turn-based battle, mini map  system, farming system, and inventory system.</li>
-        </ul>
-
-        <!--JOB 2-->
-        <h3>ARC Roofing Co. - Freelance (User Interface Designer)</h3>
-        <p>12978 SW 132nd Ave, Miami, FL, United States (Remote) • 05/2024 -  08/2024</p>
-        
-        <ul>
-            <li>Created the whole system for the 2D Mobile game (Guardians of  Luzviminda)</li>
-            <li>Enhanced user experience by designing intuitive interfaces and  seamless navigation elements.</li>
-            <li>Designed 2 sets of headers and footers and developed a  cohesive color palette for consistent branding.</li>
-            <li>Developed wireframes, prototypes, and mockups to effectively  communicate design concepts to stakeholders.</li>
-        </ul>
-
-
-         <!--JOB 1-->
-        <h3>Results Marketing Partners - Web and Mobile Developer Intern</h3>
-        <p>350 Royer Rd, Lititz, PA 17543, United States (Remote) • 01/2024 -  05/2024</p>
-        
-        <ul>
-            <li>Implemented SEO strategies to boost website visibility and drive  organic traffic. </li>
-            <li>Developed websites using CRM platforms like WordPress,  prioritizing user-friendly design and functionality.</li>
-            <li>Identified a niche market and developed tailored offerings for the  customer base.</li>
-            <li>Created a tripwire poster and video, along with a series of 5  engaging emails to drive customer engagement.</li>
-            <li>Designed intuitive UI/UX interfaces using Figma, improving overall  user experience.</li>
-        </ul>
-
-        <!--SKILLS-->
-        <h3>SKILLS</h3>
-        <ul>
-            <li>UNITY GAME ENGINE</li>
-            <li>C# Programming</li>
-            <li>Java</li>
-            <li>C++</li>
-            <li>HTML5</li>
-            <li>CSS</li>
-            <li>Tailwind CSS</li>
-            <li>JavaScript</li>
-            <li>REACT JS</li>
-            <li>MySQL</li>
-            <li>PHP</li>
-            <li>Phyton</li>
-            <li>Node.JS</li>
-            <li>Git/GitHub</li>
-            <li>Figma</li>
-            <li>UI and UX Design Proficiency</li>
-            <li>Concept Development</li>
-            <li>MS Word </li>
-            <li>PowerPoint</li>
-            <li>Google Docs</li>
-            <li>Google Sheets</li>
-        </ul>
-
-        <!--EDUCATION-->
-        <h3>EDUCATION</h3>
-        <p>
-            Malolos, Bulacan • 09/2020 - 08/2024   <br>
-            Bachelor of Science: Information  Technology
-        </p>
-
-        <!--ACCOMPLISHMENTS-->
-        <h3>ACCOMPLISHMENTS</h3>
-        <ul>
-            <li>Magna Cum Laude</li>
-            <li>Best Research in Web and Mobile  Development</li>
-            <li>Dean's Lister and Gold Gear Awardee</li>
-            <li>Best in Investigatory Research</li>
-        </ul>
-
-         <!--AFFILIATONS-->
-         <h3>AFFILIATIONS</h3>
-         <ul>
-             <li>Microsoft Learn Student Ambassador (Beta)</li>
-             <li>BSU Microsoft Student Community  (Events Director)</li>
-             <li>BSU CICT Local Student Counsil (E Sports Committee)</li>
-         </ul>
-
-         <!--CERTIFICATIONS-->
-        <h3>CERTIFICATIONS</h3>
-        <ul>
-            <li>Complete C# Unity Game Developer 3D (<b>UDEMY</b>)</li>
-            <li>Write a Professional Game Design Document (GDD) (<b>UDEMY</b>)</li>
-            <li>Programming Design Patterns for Unity: Write Better Code  (<b>UDEMY</b>)</li>
-            <li>Math For Video Games: The Fastest Way to Get Smarter at Math  (<b>UDEMY</b>)</li>
-            <li>SRE - The Big Picture (<b>UDEMY</b>)</li>
-            <li>Level Up with GitHub Codespaces and CoPilot (<b>Microsoft</b>)</li>
-            <li>A Crash Course: Tesla – Price, Value, and Performance (<b>IBS -  International Business School Americas</b>)</li>
-        </ul>
-        
-        <hr>
-        <br> 
-        <footer>© Patrick Joseph Pronuevo. All rights reserved.</footer>
     </body>
 </html>
