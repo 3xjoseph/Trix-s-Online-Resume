@@ -1,0 +1,103 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+    color: #696969;
+}
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.container > .header {
+    background-color: #D9DEE1;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 700px;
+    width: 100%;
+    padding: 40px;
+}
+
+.header #profile-picture {
+    width: 250px;
+    height: 250px;
+    border: 4px solid #696969;
+    object-fit: cover;
+    object-position: center 30%;
+    justify-self: center;
+    align-self: center;
+}
+
+.header-info {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.header .icon-header {
+    height: 24px;
+    width: 24px;
+    align-self: center;
+}
+
+.header-info > h1 {
+    font-size: 3rem;
+}
+
+.info {
+    display: flex;
+    flex-direction: row;
+    gap: 9px;
+    margin: 0;
+    padding: 0;
+}
+
+.info p {
+    margin: 0;
+}
+
+.container .content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 350px;
+    width: 100%;
+    padding: 40px;
+    margin: 0;
+
+}
+
+.title {
+    display: grid;
+    grid-template-columns: 5% 95%;
+    justify-content: center;
+}
+
+.title h2 {
+    margin: 0;
+    padding: 0;
+    align-self: center;
+}
+
+.bullet-box {
+    background-color: #696969;
+    width: 5px;
+    height: 30px;
+}
+
+.tab {
+    margin-bottom: 40px;
+}
+
+
+/* Tablet Size */
+@media (min-width: 768px) and (max-width: 1024px) {
+    
+}
+
+/* Larger Phones  */
+@media (min-width: 481px) and (max-width: 767px) {
+   
+}
